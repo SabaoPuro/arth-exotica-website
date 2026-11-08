@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NextHead from "next/head";
 
 import DefaultLayout from "@/layouts/default";
 import { EnquiryBand, PageHero } from "@/components/page-blocks";
@@ -12,12 +13,12 @@ const questions = [
   {
     question: "What room categories are available?",
     answer:
-      "The hotel offers Deluxe and Premium rooms. Please confirm occupancy, inclusions, views and availability for your dates through the booking engine or with the hotel.",
+      "The hotel offers Deluxe, Premium and Super Premium rooms. Please confirm occupancy, inclusions, views and availability for your dates directly with the hotel.",
   },
   {
     question: "How do I book a stay?",
     answer:
-      "Use the Book your stay link to reach our contact page, where you can send your enquiry directly to the hotel team.",
+      "Use the contact page to send your stay enquiry directly to the hotel team. Ask the team to confirm availability, rates and booking details for your dates.",
   },
   {
     question: "What are the check-in and check-out times?",
@@ -54,8 +55,27 @@ const questions = [
 ];
 
 export default function FAQsPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: questions.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: answer,
+      },
+    })),
+  };
+
   return (
     <DefaultLayout>
+      <NextHead>
+        <script
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          type="application/ld+json"
+        />
+      </NextHead>
       <PageHero
         accent="answered."
         description="The quick details for planning your stay at Arth Exotica in Colva."
@@ -75,7 +95,7 @@ export default function FAQsPage() {
             For details that depend on your dates, check with the hotel before
             you travel.
           </p>
-          <Link className="text-link" href="/contact">
+          <Link className="text-link faq-contact-button" href="/contact">
             Contact the hotel
           </Link>
         </div>

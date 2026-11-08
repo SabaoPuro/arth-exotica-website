@@ -1,11 +1,14 @@
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import { siteConfig } from "@/config/site";
+import BookingWidget from "@/components/booking-widget";
 import { SocialLinks } from "@/components/social-links";
 
 export default function SiteShell({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { pathname } = useRouter();
 
   return (
     <div className="site-frame">
@@ -48,6 +51,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
           {menuOpen ? "×" : "☰"}
         </button>
       </header>
+      <BookingWidget showDateWidget={pathname === "/"} />
       <main className="site-main">{children}</main>
       <footer className="site-footer">
         <div className="footer-top">

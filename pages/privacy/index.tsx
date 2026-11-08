@@ -1,5 +1,6 @@
 import DefaultLayout from "@/layouts/default";
 import { PageHero } from "@/components/page-blocks";
+import { siteConfig } from "@/config/site";
 
 export default function PrivacyPage() {
   return (
@@ -12,40 +13,54 @@ export default function PrivacyPage() {
         title="Privacy"
       />
       <article className="privacy-content section-wrap">
-        <p className="privacy-updated">Last updated: September 2026</p>
-        <h2>About this website</h2>
+        <p className="privacy-updated">Last updated: November 9, 2026</p>
+        <h2>Who this policy covers</h2>
         <p>
-          This website introduces Arth Exotica and its accommodation, dining and
-          event offerings. Booking takes place through an external hotel booking
-          engine. Contact details will be published only after they are verified
-          by the hotel.
+          This policy explains how the Arth Exotica website handles information
+          when you browse the site or contact the hotel about a stay, dining,
+          memberships, careers or events.
         </p>
-        <h2>Information you choose to share</h2>
+        <h2>Information you provide</h2>
         <p>
-          If you contact the hotel using contact information published on this
-          site, the hotel may use the information you provide to respond to your
-          request or manage your stay. Please avoid sending sensitive personal
-          information unless it is necessary for your enquiry.
+          When you contact the hotel by email or WhatsApp, you may choose to
+          share your name, contact details, travel dates, preferences and the
+          contents of your message. Job applicants may also choose to send a CV
+          and information about their experience. The website does not ask you
+          to submit payment-card details.
         </p>
-        <h2>Cookies and analytics</h2>
+        <h2>How information is used</h2>
         <p>
-          This site may be hosted by third-party infrastructure providers that
-          process basic technical information needed to deliver and secure the
-          website. No analytics or advertising tools are intentionally
-          configured on this site. The external booking engine and embedded map
-          may process information under their own privacy notices. Review this
-          statement if tracking or marketing services are added.
+          The hotel may use information you send to respond to your enquiry,
+          provide requested information, coordinate a booking or event, or
+          consider a job application. Do not send sensitive personal information
+          unless it is needed to handle your request.
         </p>
-        <h2>Your choices</h2>
+        <h2>Service providers and external links</h2>
         <p>
-          For questions about how information shared directly with the hotel is
-          handled, contact the hotel using its verified contact details once
-          published. The hotel should replace this draft with its approved
-          privacy notice and contact information before launch.
+          Website hosting and security providers may process basic technical
+          information to deliver the site. The Contact page embeds Google Maps,
+          which may receive technical information when it loads. Links to
+          WhatsApp, social networks, Google Maps and other third-party services
+          take you to services governed by their own privacy policies. The
+          website is not currently configured with analytics or advertising
+          services.
         </p>
-        <p className="privacy-draft">
-          This page is a website draft and is not legal advice. The hotel should
-          review and approve it before publication.
+        <h2>Your choices and enquiries</h2>
+        <p>
+          You can choose what information to include in a message and contact
+          the hotel to ask about information you have shared directly with it.
+          Email{" "}
+          <a href={`mailto:${siteConfig.reservationEmail}`}>
+            {siteConfig.reservationEmail}
+          </a>
+          . You can manage cookies through your browser settings; see our{" "}
+          <a href="/cookies">Cookie Policy</a> for more information.
+        </p>
+        <h2>Policy updates</h2>
+        <p>
+          This policy may be updated when the website or its services change.
+          The date at the top of the page shows when it was most recently
+          revised.
         </p>
       </article>
     </DefaultLayout>

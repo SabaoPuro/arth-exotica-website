@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import DefaultLayout from "@/layouts/default";
 import { DetailRows, LocationMap, PageHero } from "@/components/page-blocks";
@@ -7,6 +8,20 @@ import { siteConfig } from "@/config/site";
 import { SocialLinks } from "@/components/social-links";
 
 export default function ContactPage() {
+  const { isReady, query } = useRouter();
+  const checkIn = typeof query.checkIn === "string" ? query.checkIn : "";
+  const checkOut = typeof query.checkOut === "string" ? query.checkOut : "";
+  const hasStayDates = isReady && Boolean(checkIn && checkOut);
+  const reservationMessage = [
+    "Hello Team Arth Exotica,",
+    "",
+    "I would like to enquire about a stay, reservation or booking details.",
+    ...(hasStayDates ? [`Check-in: ${checkIn}`, `Check-out: ${checkOut}`] : []),
+    "",
+    "Thank you.",
+    "[Your Name]",
+  ].join("\n");
+
   return (
     <DefaultLayout>
       <PageHero
@@ -29,10 +44,16 @@ export default function ContactPage() {
             hotel team. Your message will be prefilled; add your query and name
             before sending.
           </p>
+          {hasStayDates && (
+            <p className="contact-stay-dates">
+              Your selected dates: <strong>{checkIn}</strong> to{" "}
+              <strong>{checkOut}</strong>
+            </p>
+          )}
           <div className="membership-contact-actions">
             <a
               className="button button-light"
-              href={`mailto:${siteConfig.reservationEmail}?subject=${encodeURIComponent("Reservation enquiry")}&body=${encodeURIComponent("Hello Team Arth Exotica,\n\nI would like to enquire about a stay, reservation or booking details.\n\nThank you.\n\n[Your Name]")}`}
+              href={`mailto:${siteConfig.reservationEmail}?subject=${encodeURIComponent("Reservation enquiry")}&body=${encodeURIComponent(reservationMessage)}`}
             >
               <EmailIcon /> {siteConfig.reservationEmail}
             </a>

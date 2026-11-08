@@ -12,24 +12,41 @@ export default function AboutPage() {
         title="A little"
       />
       <section className="about-story section-wrap">
-        <div className="section-label">Our place in Colva</div>
-        <div>
+        <div className="about-story-aside">
+          <p className="section-label">Our place in Colva</p>
+          <p className="about-story-note">
+            A South Goa stay, shaped around comfort and connection.
+          </p>
+        </div>
+        <div className="about-story-copy">
           <h2>
-            Warm welcomes.
+            A stay with room
             <br />
-            <em>Easy days.</em>
+            <em>for your kind of Goa.</em>
           </h2>
           <p>
-            Settle into a restful room, share a meal, take a poolside pause or
-            bring your people together. Arth Exotica brings stays, dining and
-            gathering spaces together in one South Goa address.
+            Located in Fatona, Colva, Arth Exotica brings together considered
+            rooms, dining and welcoming spaces for time well spent. Whether
+            you’re here to slow down, share a meal or gather with others, make
+            your stay your own.
           </p>
-          <p>
-            We are building this website with the details guests need to plan
-            confidently. Information that still needs confirmation, including
-            direct contact details, current services and hotel policies, is
-            clearly marked throughout.
-          </p>
+          <div className="about-pillars">
+            <div>
+              <span>01</span>
+              <strong>Stay</strong>
+              <p>40 guest rooms, with options for different kinds of visits.</p>
+            </div>
+            <div>
+              <span>02</span>
+              <strong>Unwind</strong>
+              <p>Enjoy the swimming pool, yoga and moments of meditation.</p>
+            </div>
+            <div>
+              <span>03</span>
+              <strong>Come together</strong>
+              <p>Find dining and gathering spaces in one Colva address.</p>
+            </div>
+          </div>
         </div>
       </section>
       <section className="about-image">

@@ -8,10 +8,10 @@ export default function ExperiencesPage() {
   return (
     <DefaultLayout>
       <PageHero
-        accent="balance."
-        description="A restorative pause, an unhurried meal or a celebration with your favourite people. Make the stay your own."
+        accent="wellbeing."
+        description="Make time for yoga, meditation and a refreshing swim during your stay at Arth Exotica in Colva, South Goa."
         eyebrow="The Arth Exotica experience"
-        image="/pool.jpg"
+        image="/yoga.jpg"
         title="Find your"
       />
       <section className="experience-intro section-wrap">
@@ -23,77 +23,88 @@ export default function ExperiencesPage() {
             <em>good stuff.</em>
           </h2>
           <p>
-            Take a refreshing dip, enjoy a change of scene or simply leave the
-            day unscheduled. Explore the hotel’s spaces and ask our team which
-            experiences are available during your dates.
+            Find a little space for yourself with yoga, meditation and time by
+            the swimming pool. Contact the hotel for current schedules and
+            details before your visit.
           </p>
         </div>
       </section>
       <section className="experience-feature" id="amenities">
         <div className="experience-feature-image">
-          <img alt="Swimming pool at Arth Exotica" src="/pool.jpg" />
+          <img
+            alt="Outdoor swimming pool at Arth Exotica"
+            src="/swimming-pool.jpg"
+          />
         </div>
         <div className="experience-feature-copy">
-          <p className="eyebrow dark-eyebrow">A moment to yourself</p>
+          <p className="eyebrow dark-eyebrow">Swimming pool</p>
           <h2>
-            Wellness,
+            Take a
             <br />
-            <em>your way.</em>
+            <em>refreshing pause.</em>
           </h2>
           <p>
-            Pause by the pool, make time for a slower morning and let South Goa
-            set the rhythm. Spa treatments, fitness facilities and wellness
-            services have not yet been confirmed; please ask the team about
-            current offerings.
+            Enjoy a refreshing swim and a relaxed moment by the pool at Arth
+            Exotica.
           </p>
-          <Link className="text-link" href="/contact">
-            Ask about wellness
-          </Link>
         </div>
       </section>
-      <section className="pale-section">
-        <div className="section-wrap split-heading">
+      <section className="pale-section wellness-section">
+        <div className="section-wrap split-heading wellness-heading">
           <div>
-            <p className="eyebrow dark-eyebrow">At a glance</p>
+            <p className="eyebrow dark-eyebrow">Mindful moments</p>
             <h2>
-              Hotel amenities
+              Yoga &amp;
               <br />
-              <em>& facilities.</em>
+              <em>meditation.</em>
             </h2>
           </div>
           <div>
             <p>
-              The property imagery features a swimming pool, guest rooms,
-              restaurant seating, meeting space and an event terrace. Confirm
-              opening hours, access and any fees directly with the hotel.
+              Add a mindful moment to your stay with yoga and meditation at Arth
+              Exotica. Contact the hotel to ask about session timings,
+              arrangements and any applicable charges.
             </p>
           </div>
         </div>
-        <div className="section-wrap feature-list">
-          <div>
-            <span>01</span>
-            <h3>Pool</h3>
-            <p>
-              A pool is featured in the supplied property imagery. Ask about
-              operating hours, access and child supervision requirements.
-            </p>
-          </div>
-          <div>
-            <span>02</span>
-            <h3>Dining</h3>
-            <p>
-              Restaurant dining is pictured on site. Menu, service hours,
-              dietary options and room service availability need confirmation.
-            </p>
-          </div>
-          <div>
-            <span>03</span>
-            <h3>Gatherings</h3>
-            <p>
-              Meeting and event spaces are pictured. Layouts, capacity, AV
-              equipment and availability are confirmed on enquiry.
-            </p>
-          </div>
+        <div className="section-wrap wellness-grid">
+          <article className="wellness-card">
+            <img
+              alt="A guest practising yoga at Arth Exotica"
+              loading="lazy"
+              src="/yoga.jpg"
+            />
+            <div className="wellness-card-copy">
+              <div className="wellness-card-label">
+                <span>01</span>
+                <span>Mind &amp; body</span>
+              </div>
+              <h3>Yoga</h3>
+              <p>
+                Stretch, move and make room for a mindful start to your day.
+                Contact the hotel for current yoga session details.
+              </p>
+            </div>
+          </article>
+          <article className="wellness-card">
+            <img
+              alt="A guest meditating in a peaceful setting"
+              className="meditation-image"
+              loading="lazy"
+              src="/mediation-2.jpg"
+            />
+            <div className="wellness-card-copy">
+              <div className="wellness-card-label">
+                <span>02</span>
+                <span>Pause &amp; reset</span>
+              </div>
+              <h3>Meditation</h3>
+              <p>
+                Find a quiet moment to slow down and reset. Ask the hotel team
+                about meditation arrangements during your stay.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
       <section className="guest-info section-wrap" id="guest-information">

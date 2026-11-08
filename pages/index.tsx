@@ -38,33 +38,69 @@ export default function IndexPage() {
         </div>
       </section>
 
-      <section className="welcome section-wrap">
-        <div className="welcome-copy">
-          <h2>
-            Explore our hospitality
-            <br />
-            <em>during your stay.</em>
-          </h2>
-          <br />
-          <div className="welcome-mark">
-            <img
-              alt="Arth Exotica logo"
-              className="welcome-logo"
-              src="/hotel-logo-without-bg.png"
-            />
-            <p className="section-label">
-              A four-star luxury property in Goa, in the heart of Colva
+      <section aria-labelledby="welcome-title" className="welcome">
+        <div className="section-wrap welcome-layout">
+          <div className="welcome-copy">
+            <p className="eyebrow dark-eyebrow">
+              Four-star hospitality · Colva, South Goa
             </p>
+            <h2 id="welcome-title">
+              Refined comfort,
+              <br />
+              <em>rooted in Goa.</em>
+            </h2>
+            <p>
+              In Fatona, Colva, Arth Exotica brings together 40 guest rooms,
+              warm Goan hospitality and thoughtful spaces to unwind, dine and
+              gather. Make time for the swimming pool, yoga and meditation, or
+              plan a stay around a shared meal or special occasion.
+            </p>
+            <div className="welcome-actions">
+              <Link className="button" href="/stay">
+                Discover our rooms
+              </Link>
+              <Link className="text-link" href="/experiences">
+                Explore experiences
+              </Link>
+            </div>
+            <p className="welcome-location">Fatona · Colva · South Goa</p>
           </div>
-          <p>
-            At Arth Exotica, thoughtful comforts and warm, attentive service
-            come together to offer one of the best hospitality experiences in
-            Goa. Whether you are here for a weekend away, a shared meal or a
-            gathering worth remembering, make yourself at home.
-          </p>
-          <Link className="text-link" href="/experiences">
-            Discover the hotel
-          </Link>
+          <div
+            aria-label="Explore Arth Exotica"
+            className="welcome-highlights"
+            role="group"
+          >
+            <Link className="welcome-highlight" href="/stay">
+              <span className="welcome-highlight-number">01</span>
+              <span>
+                <strong>Stay</strong>
+                <small>40 rooms, made for a slower pace</small>
+              </span>
+              <span aria-hidden="true" className="welcome-highlight-arrow">
+                &gt;
+              </span>
+            </Link>
+            <Link className="welcome-highlight" href="/experiences">
+              <span className="welcome-highlight-number">02</span>
+              <span>
+                <strong>Unwind</strong>
+                <small>Swimming, yoga and meditation</small>
+              </span>
+              <span aria-hidden="true" className="welcome-highlight-arrow">
+                &gt;
+              </span>
+            </Link>
+            <Link className="welcome-highlight" href="/dining">
+              <span className="welcome-highlight-number">03</span>
+              <span>
+                <strong>Gather</strong>
+                <small>Dining, meetings and celebrations</small>
+              </span>
+              <span aria-hidden="true" className="welcome-highlight-arrow">
+                &gt;
+              </span>
+            </Link>
+          </div>
         </div>
       </section>
       <section aria-labelledby="home-video-title" className="home-video">

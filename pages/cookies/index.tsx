@@ -1,5 +1,6 @@
 import DefaultLayout from "@/layouts/default";
 import { PageHero } from "@/components/page-blocks";
+import { siteConfig } from "@/config/site";
 
 export default function CookiePolicyPage() {
   return (
@@ -12,58 +13,43 @@ export default function CookiePolicyPage() {
         title="Cookie"
       />
       <article className="privacy-content section-wrap">
-        <p className="privacy-updated">Last updated: September 2026</p>
+        <p className="privacy-updated">Last updated: November 9, 2026</p>
         <h2>What cookies are</h2>
         <p>
-          Cookies are small files stored by a website in your browser. Similar
-          technologies, such as local storage and pixels, can also remember
-          choices or help a service work.
+          Cookies are small files that websites may store in your browser.
+          Similar technologies can help a website work or allow a third-party
+          service to operate.
         </p>
-        <h2>How this website uses them</h2>
+        <h2>Cookies and this website</h2>
         <p>
-          This website does not currently intentionally set analytics or
-          advertising cookies. Hosting, security, the external booking engine
-          and embedded maps may use technologies under their providers&apos; own
-          policies. The Google Maps embed loads on the Contact page and may
-          allow Google to receive technical data when that page is viewed.
+          This website is not currently configured to use analytics or
+          advertising services. The Contact page contains an embedded Google
+          Map. When the map loads, Google may receive technical information or
+          use cookies under its own policies. Website hosting and security
+          providers may also use necessary technologies to deliver and protect
+          the site.
         </p>
-        <h2>Your choices and consent</h2>
+        <h2>Your choices</h2>
         <p>
-          You can manage or delete cookies through your browser settings.
-          Blocking cookies may affect embedded maps or booking functionality.
-          Cookie consent requirements vary by visitor location and the
-          technologies in use. This site does not currently have a consent
-          banner; the hotel should assess whether one is required for its
-          markets and configure consent controls before adding optional tracking
-          or marketing tools.
-        </p>
-        <h2>India and international privacy rules</h2>
-        <p>
-          This notice is intended to be read alongside the Privacy Policy and
-          applicable requirements, including India’s Digital Personal Data
-          Protection Act, 2023 and rules in force, and applicable international
-          or regional e-privacy and data-protection requirements. Requirements
-          depend on where visitors are located, what tools are deployed, and how
-          personal data is processed.
+          You can review, block or delete cookies through your browser settings.
+          Blocking third-party cookies or content may affect how embedded maps
+          or other external services work.
         </p>
         <h2>Third-party services</h2>
         <p>
-          Google Maps and the hotel’s booking engine are external services. When
-          you use them, their providers may process information under their own
-          cookie and privacy policies. Please review those policies on the
-          relevant service.
+          Google Maps and linked services such as WhatsApp and social networks
+          are operated by third parties. Their use of cookies and similar
+          technologies is governed by their own policies. Review those policies
+          on the relevant service before using it.
         </p>
-        <h2>Updates and questions</h2>
+        <h2>Questions and updates</h2>
         <p>
-          This policy should be updated when the site’s technology changes. The
-          hotel should publish verified contact details here and in the Privacy
-          Policy so visitors can submit questions or requests.
-        </p>
-        <p className="privacy-draft">
-          This is a website draft, not legal advice or a compliance
-          certification. Have the hotel’s privacy representative or legal
-          adviser review it against the actual hosting, map, booking and
-          analytics configuration before publication.
+          If you have a question about this policy, contact the hotel at{" "}
+          <a href={`mailto:${siteConfig.reservationEmail}`}>
+            {siteConfig.reservationEmail}
+          </a>
+          . This page may be updated when the website&apos;s features or
+          third-party services change.
         </p>
       </article>
     </DefaultLayout>
