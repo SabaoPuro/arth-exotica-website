@@ -107,14 +107,6 @@ export default function ContactPage() {
               },
             ]}
           />
-          <a
-            className="text-link"
-            href={siteConfig.address.mapUrl}
-            rel="noreferrer"
-            target="_blank"
-          >
-            Open directions
-          </a>
         </div>
       </section>
       <LocationMap />

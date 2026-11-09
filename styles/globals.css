@@ -471,10 +471,23 @@ p, .detail-rows dd, .faq-list details > p { color: #46564c; font-weight: 500; }
 .contact-socials .social-links { display: flex; flex-direction: row; flex-wrap: wrap; gap: 12px 24px; width: auto; }
 .contact-quick-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
 .review-button, .review-button + .review-button { margin: 0; }
+@media (max-width: 900px) {
+  .contact-layout { grid-template-columns: minmax(0, 1fr); }
+  .contact-copy, .contact-details { width: 100%; }
+  .contact-details .detail-rows > div { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+}
 @media (max-width: 760px) {
   .contact-layout { gap: 34px; padding: 66px 0; }
   .contact-copy { padding-top: 0; }
-  .contact-details { padding: 24px 20px; }
+  .contact-details { padding: 26px 20px; border-radius: 22px; }
+  .contact-details > .eyebrow { margin-bottom: 10px; }
+  .contact-details h3 { margin: 0 0 8px; font: 400 28px/1.2 var(--display); }
+  .contact-details > p:not(.eyebrow) { margin: 0 0 24px; font-size: 13px; line-height: 1.7; }
+  .contact-details .detail-rows { margin: 20px 0 22px; }
+  .contact-details .detail-rows > div { grid-template-columns: minmax(0, 1fr); gap: 5px; padding: 13px 0; }
+  .contact-details .detail-rows dt { font-size: 11px; }
+  .contact-details .detail-rows dd { font-size: 13px; line-height: 1.6; overflow-wrap: anywhere; }
+  .contact-details > .text-link { display: flex; width: 100%; min-height: 48px; justify-content: center; margin: 0; }
 }
 .room-card-grid { align-items: stretch; }
 .room-card { border-radius: 20px; }
