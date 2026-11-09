@@ -8,7 +8,7 @@ export default function DiningPage() {
         accent="chair."
         description="Good food has a way of bringing the day together. Find your place at the table in Colva."
         eyebrow="Dining at Arth Exotica"
-        image="/dine-in.jpg"
+        image="/Restaurant%20Picture%20-3.jpg"
         title="Pull up a"
       />
       <section className="dining-intro section-wrap">
@@ -45,8 +45,22 @@ export default function DiningPage() {
           </div>
         </div>
         <div className="dining-gallery">
-          <img alt="Restaurant seating area" src="/dine-in-2.jpg" />
-          <img alt="Outdoor terrace setting" src="/hotel-terrace-event-2.jpg" />
+          <img
+            alt="Dining room at Arth Exotica"
+            src="/Restaurant%20Picture%20-2.jpg"
+          />
+          <img
+            alt="Restaurant bar at Arth Exotica"
+            src="/Restaurant%20Picture%20-4.jpg"
+          />
+          <img
+            alt="Dining space at Arth Exotica"
+            src="/Restaurant%20Picture%20-7.webp"
+          />
+          <img
+            alt="Restaurant at Arth Exotica"
+            src="/Restaurant%20Picture%20-8.webp"
+          />
         </div>
       </section>
       <section className="pale-section dining-cuisines">

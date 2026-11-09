@@ -37,7 +37,7 @@ export const Head = () => {
           ratingValue: 4,
         },
         checkinTime: "14:00",
-        checkoutTime: "12:00",
+        checkoutTime: "11:00",
         amenityFeature: [
           {
             "@type": "LocationFeatureSpecification",

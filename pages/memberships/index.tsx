@@ -12,7 +12,7 @@ export default function MembershipsPage() {
         accent="to come back to."
         description="Ask about membership options and privileges directly with hotel management."
         eyebrow="Arth Exotica memberships"
-        image="/hotel-terrace-event-2.jpg"
+        image="/4.%20Arth%20Exotic%20Hotel%20Front%20View%20with%20Ambiance%20Angle%20View.jpg"
         title="A little more"
       />
       <section className="careers-content section-wrap">

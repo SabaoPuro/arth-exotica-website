@@ -9,7 +9,7 @@ export default function PrivacyPage() {
         accent="policy."
         description="A clear note about privacy on the Arth Exotica website."
         eyebrow="Your information"
-        image="/hotel-interior.jpg"
+        image="/4.%20Arth%20Exotic%20Hotel%20Front%20View%20with%20Ambiance%20Angle%20View.jpg"
         title="Privacy"
       />
       <article className="privacy-content section-wrap">

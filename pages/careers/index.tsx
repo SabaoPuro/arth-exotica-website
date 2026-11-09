@@ -9,7 +9,7 @@ export default function CareersPage() {
         accent="things happen."
         description="Help create thoughtful stays, warm welcomes and memorable moments in South Goa."
         eyebrow="Careers at Arth Exotica"
-        image="/hotel-interior-2.jpg"
+        image="/2.%20Arth%20Exotic%20Hotel%20Front%20Low%20Angle%20View%20copy.jpg"
         title="Make good"
       />
       <section className="careers-content section-wrap">
@@ -39,6 +39,7 @@ export default function CareersPage() {
               short note about your experience.
             </span>
           </div>
+          {/*
           <div className="careers-follow-box">
             <p>
               Keep an eye out on LinkedIn for any roles posted, and follow our
@@ -56,6 +57,7 @@ export default function CareersPage() {
               Follow on LinkedIn
             </a>
           </div>
+          */}
           <p className="careers-note">
             Please include the role you are interested in and your contact
             details. Never send original identity or financial documents with an

@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 const membershipEmail = "info@arthexotica.com";
 const reservationEmail = "reservations@arthexotica.com";
-const membershipWhatsApp = "+919850799851";
+const membershipWhatsApp = "+918669200071";
 const membershipMessage =
   "Hello Team Arth Exotica,\n\nI have a query regarding your hotel memberships. Please send me your available options.\n\nThank you in advance.\n\n[Your Name]";
 const stayMessage =
@@ -14,7 +14,8 @@ export const siteConfig = {
   title: "Arth Exotica | 4-Star Hotel in Colva, South Goa",
   description:
     "Stay at Arth Exotica, a four-star hotel in Colva, South Goa. Explore 40 rooms, a swimming pool, intercontinental and Goan dining, and meeting and event spaces.",
-  socialImage: "/hotel-front-2.jpg",
+  socialImage:
+    "/4.%20Arth%20Exotic%20Hotel%20Front%20View%20with%20Ambiance%20Angle%20View.jpg",
   pages: {
     "/": {
       title: "Arth Exotica | 4-Star Hotel in Colva, South Goa",
@@ -31,15 +32,20 @@ export const siteConfig = {
       description:
         "Explore Deluxe, Premium and Super Premium rooms at Arth Exotica in Colva, South Goa. Check room details and enquire about availability.",
     },
+    "/gallery": {
+      title: "Hotel Gallery | Arth Exotica, Colva, Goa",
+      description:
+        "Explore photos of Arth Exotica in Colva, South Goa, and discover the hotel, its spaces and the details of a stay.",
+    },
     "/dining": {
       title: "Dining at Arth Exotica | Restaurant in Colva, Goa",
       description:
         "Enjoy intercontinental and Goan dining at Arth Exotica in Colva, South Goa. Contact the hotel for current menus, service hours and reservations.",
     },
     "/experiences": {
-      title: "Yoga, Meditation & Pool | Arth Exotica, Goa",
+      title: "Spa, Yoga, Meditation & Pool | Arth Exotica, Goa",
       description:
-        "Enjoy yoga, meditation and swimming at Arth Exotica in Colva, South Goa. Contact the hotel for session schedules, pool hours and access details.",
+        "Enjoy a spa treatment, yoga, meditation and swimming at Arth Exotica in Colva, South Goa. Contact the hotel for service availability, session schedules and pool hours.",
     },
     "/meetings": {
       title: "Meetings & Events in Colva, Goa | Arth Exotica",
@@ -87,9 +93,9 @@ export const siteConfig = {
     mapEmbedUrl:
       "https://www.google.com/maps?q=15.2807125,73.9198548&z=15&output=embed",
   },
-  gstin: "11101119283HYUI",
+  gstin: "30AEVPD0142B2ZA",
   checkInTime: "2:00 PM",
-  checkOutTime: "12:00 PM",
+  checkOutTime: "11:00 AM",
   hrEmail: "hr@arthexotica.com",
   membershipEmail,
   reservationEmail,
@@ -108,14 +114,15 @@ export const siteConfig = {
       label: "Instagram",
       url: "https://www.instagram.com/arthexoticaresortgoa/",
     },
-    {
-      label: "LinkedIn",
-      url: "https://www.linkedin.com/in/arthexoticaresortgoa/",
-    },
+    // {
+    //   label: "LinkedIn",
+    //   url: "https://www.linkedin.com/in/arthexoticaresortgoa/",
+    // },
     { label: "YouTube", url: "https://www.youtube.com/@ArthExoticaResortGoa" },
   ],
   navItems: [
     { label: "Stay", href: "/stay" },
+    { label: "Gallery", href: "/gallery" },
     { label: "Memberships", href: "/memberships" },
     { label: "Experiences", href: "/experiences" },
     { label: "Dining", href: "/dining" },

@@ -1,6 +1,78 @@
 import DefaultLayout from "@/layouts/default";
 import { DetailRows, EnquiryBand, PageHero } from "@/components/page-blocks";
+import { RoomGallery } from "@/components/room-gallery";
 import { siteConfig } from "@/config/site";
+
+const roomCategories = [
+  {
+    name: "Premium Deluxe",
+    description:
+      "A welcoming retreat with a calm, comfortable feel—well suited to unwinding after a day in South Goa.",
+    folder: "deluxe",
+    images: [
+      "/deluxe/Deluxe%20Room%20-1.jpg",
+      "/deluxe/Deluxe%20Room%20-2.jpg",
+      "/deluxe/Deluxe%20Room%20-3.jpg",
+      "/deluxe/Deluxe%20Room%20-4.jpg",
+      "/deluxe/Deluxe%20Room%20-%205.jpg",
+    ],
+  },
+  {
+    name: "Luxury Superior",
+    description:
+      "A polished, restful room for a slower pace, from quiet mornings to easy evenings.",
+    folder: "superior",
+    images: [
+      "/superior/Superior%20Room%20-1.jpg",
+      "/superior/Superior%20Room%20-2.jpg",
+      "/superior/Superior%20Room%20-3.jpg",
+      "/superior/Superior%20Room%20-4.jpg",
+      "/superior/Superior%20Room%20-5.jpg",
+    ],
+  },
+  {
+    name: "Grand Deluxe",
+    description:
+      "Enjoy a private balcony and take in a little open-air time during your South Goa stay.",
+    folder: "Deluxe-with-Balcony",
+    images: [
+      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-1.jpg",
+      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-2.jpg",
+      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-%203.jpg",
+      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-%204.jpg",
+      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-5.jpg",
+      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-%206.jpg",
+    ],
+  },
+  {
+    name: "Majestic Room",
+    description:
+      "A welcoming choice for family stays and relaxed time together in South Goa.",
+    folder: "Family-room",
+    images: [
+      "/Family-room/Family%20Room%20-1.jpg",
+      "/Family-room/Family%20Room%20-2.jpg",
+      "/Family-room/Family%20Room%20-3.jpg",
+      "/Family-room/Family%20Room%20-4.jpg",
+      "/Family-room/Family%20Room%20-5.jpg",
+    ],
+  },
+  {
+    name: "Royal Presidential Suite",
+    description:
+      "A distinguished suite featuring a kitchenette for added convenience during your stay.",
+    folder: "Presidential-Executive-room",
+    images: [
+      "/Presidential-Executive-room/Presidential%20Room%20-2.jpg",
+      "/Presidential-Executive-room/Presidential%20Room%20-1.jpg",
+      "/Presidential-Executive-room/Presidential%20Room%20-3.jpg",
+      "/Presidential-Executive-room/Presidential%20Room%20-4.jpg",
+      "/Presidential-Executive-room/Presidential%20Room%20-5.jpg",
+      "/Presidential-Executive-room/Presidential%20Room%20-6.jpg",
+      "/Presidential-Executive-room/Presidential%20Room%20-7.jpg",
+    ],
+  },
+];
 
 export default function StayPage() {
   return (
@@ -9,27 +81,30 @@ export default function StayPage() {
         accent="unwind."
         description="Find your own pace in a calm, considered space made for restorative nights and slow mornings."
         eyebrow="Rooms & suites"
-        image="/deluxe-room.jpg"
+        image="/deluxe/Deluxe%20Room%20-1.jpg"
         title="Room to"
       />
       <section className="room-intro section-wrap">
-        <div className="room-photo">
-          <img
-            alt="Guest room with a king bed and lounge seating"
-            src="/premium-deluxe-room.jpg"
-          />
-        </div>
         <div className="room-copy">
           <p className="eyebrow dark-eyebrow">Stay your way</p>
           <h2>
-            Deluxe &<br />
-            <em>Premium rooms</em>
+            Find the room
+            <br />
+            <em>that feels right.</em>
           </h2>
+        </div>
+        <div className="room-photo">
+          <img
+            alt="Grand Deluxe room at Arth Exotica"
+            src="/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-1.jpg"
+          />
+        </div>
+        <div className="room-description">
           <p>
-            Choose a welcoming Deluxe room or make space for a little more
-            comfort in a Premium room. Room layouts, views and bedding
-            configurations can vary, so let us know what matters to you when you
-            book.
+            Explore five room categories, from Premium Deluxe and Luxury
+            Superior rooms to the Majestic Room and Royal Presidential Suite.
+            Browse each photo gallery, then contact the hotel to confirm details
+            and availability for your dates.
           </p>
           <div className="room-tags">
             <span>40 rooms</span>
@@ -62,98 +137,53 @@ export default function StayPage() {
         </div>
 
         <div className="section-wrap room-card-grid">
-          <article className="room-card">
-            <div className="room-card-media">
-              <img alt="Deluxe room at Arth Exotica" src="/deluxe-room.jpg" />
-            </div>
-            <div className="room-card-body">
-              <div className="room-card-header">
-                <h3>Deluxe</h3>
-                <span className="room-card-tag">Classic</span>
+          {roomCategories.map((category) => (
+            <article key={category.folder} className="room-card">
+              <RoomGallery category={category.name} images={category.images} />
+              <div className="room-card-body">
+                <div className="room-card-header">
+                  <h3>{category.name}</h3>
+                  <span className="room-card-tag">
+                    {category.images.length} photos
+                  </span>
+                </div>
+                <p>{category.description}</p>
+                <a
+                  className="button room-book-button"
+                  href={siteConfig.bookingUrl}
+                >
+                  Book Now
+                </a>
               </div>
-              <p>
-                A restful base for slow mornings, thoughtful downtime and easy
-                city-to-coast living.
-              </p>
-              <ul>
-                <li>King or twin bed options</li>
-                <li>Private en-suite bathroom</li>
-                <li>Air conditioning</li>
-                <li>Complimentary Wi‑Fi</li>
-                <li>Room service on request</li>
-              </ul>
-              <a
-                className="button room-book-button"
-                href={siteConfig.bookingUrl}
-              >
-                Book now
-              </a>
-            </div>
-          </article>
-
-          <article className="room-card room-card-featured">
-            <div className="room-card-media">
-              <img
-                alt="Premium room at Arth Exotica"
-                src="/premium-deluxe-room.jpg"
-              />
-            </div>
-            <div className="room-card-body">
-              <div className="room-card-header">
-                <h3>Premium</h3>
-                <span className="room-card-tag">Popular</span>
-              </div>
-              <p>
-                Extra comfort and a more generous feel for guests who want room
-                to stretch out and settle in.
-              </p>
-              <ul>
-                <li>Spacious king bed setup</li>
-                <li>Seating lounge area</li>
-                <li>Premium bath amenities</li>
-                <li>Smart TV + Wi‑Fi</li>
-                <li>Soft lighting and curated interiors</li>
-              </ul>
-              <a
-                className="button room-book-button"
-                href={siteConfig.bookingUrl}
-              >
-                Book now
-              </a>
-            </div>
-          </article>
-
-          <article className="room-card">
-            <div className="room-card-media">
-              <img
-                alt="Super Premium room at Arth Exotica"
-                src="/super-premium.jpg"
-              />
-            </div>
-            <div className="room-card-body">
-              <div className="room-card-header">
-                <h3>Super Premium</h3>
-                <span className="room-card-tag">Signature</span>
-              </div>
-              <p>
-                Our elevated option for longer stays, special occasions and more
-                indulgent, polished comfort.
-              </p>
-              <ul>
-                <li>Generous room footprint</li>
-                <li>Luxury bedding and finishes</li>
-                <li>Enhanced lounge and storage</li>
-                <li>Premium bath and linen collection</li>
-                <li>Priority assistance on request</li>
-              </ul>
-              <a
-                className="button room-book-button"
-                href={siteConfig.bookingUrl}
-              >
-                Book now
-              </a>
-            </div>
-          </article>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section
+        aria-labelledby="stay-experiences-title"
+        className="stay-experiences"
+      >
+        <div className="stay-experiences-copy">
+          <p className="eyebrow">Beyond your room</p>
+          <h2 id="stay-experiences-title">
+            Make space
+            <br />
+            <em>for a slower day.</em>
+          </h2>
+          <p>
+            Make room for a restorative spa moment and let your time in South
+            Goa unfold at its own pace.
+          </p>
+          <a className="button stay-experiences-link" href="/experiences">
+            Explore experiences
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+        <div className="stay-experiences-image">
+          <img alt="Spa treatment at Arth Exotica" src="/Spa%20treatment.jpg" />
+          <span className="stay-experiences-caption">
+            Your own kind of escape
+          </span>
         </div>
       </section>
       <section className="guest-info section-wrap" id="guest-information">

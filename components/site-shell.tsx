@@ -71,6 +71,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
             <p className="footer-title">Discover</p>
             <Link href="/about">Our hotel</Link>
             <Link href="/stay">Rooms & suites</Link>
+            <Link href="/gallery">Hotel gallery</Link>
             <Link href="/memberships">Memberships</Link>
             <Link href="/experiences">Experiences</Link>
             <Link href="/dining">Dining</Link>

@@ -80,7 +80,7 @@ export default function FAQsPage() {
         accent="answered."
         description="The quick details for planning your stay at Arth Exotica in Colva."
         eyebrow="A few useful answers"
-        image="/hotel-interior.jpg"
+        image="/4.%20Arth%20Exotic%20Hotel%20Front%20View%20with%20Ambiance%20Angle%20View.jpg"
         title="Questions,"
       />
       <section className="faq-section section-wrap">

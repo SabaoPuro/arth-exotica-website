@@ -28,7 +28,7 @@ export default function ContactPage() {
         accent="hear from you."
         description="Planning a stay, a meal or a gathering? Reach out and we’ll help you find the right next step."
         eyebrow="Contact Arth Exotica"
-        image="/hotel-front-2.jpg"
+        image="/2.%20Arth%20Exotic%20Hotel%20Front%20Low%20Angle%20View%20copy.jpg"
         title="We’d love to"
       />
       <section className="contact-layout section-wrap">
@@ -66,25 +66,23 @@ export default function ContactPage() {
               <WhatsAppIcon /> {siteConfig.membershipWhatsApp}
             </a>
           </div>
-          <div className="contact-placeholder">
-            <span>GSTIN</span>
-            <b>{siteConfig.gstin}</b>
-          </div>
           <div className="contact-socials">
             <p className="eyebrow dark-eyebrow">Find us on social</p>
             <SocialLinks />
           </div>
-          <a
-            className="button button-light review-button"
-            href={siteConfig.googleReviewsUrl}
-            rel="noreferrer"
-            target="_blank"
-          >
-            Google Reviews
-          </a>
-          <Link className="button button-light review-button" href="/faqs">
-            View FAQs
-          </Link>
+          <div className="contact-quick-links">
+            <a
+              className="button button-light review-button"
+              href={siteConfig.googleReviewsUrl}
+              rel="noreferrer"
+              target="_blank"
+            >
+              Google Reviews
+            </a>
+            <Link className="button button-light review-button" href="/faqs">
+              View FAQs
+            </Link>
+          </div>
         </div>
         <div className="contact-details">
           <p className="eyebrow dark-eyebrow">Find us</p>
@@ -121,7 +119,10 @@ export default function ContactPage() {
       </section>
       <LocationMap />
       <section className="contact-image">
-        <img alt="Arth Exotica in Fatona, Colva" src="/hotel-full-view.jpg" />
+        <img
+          alt="Arth Exotica in Fatona, Colva"
+          src="/4.%20Arth%20Exotic%20Hotel%20Front%20View%20with%20Ambiance%20Angle%20View.jpg"
+        />
         <div>
           <p className="eyebrow">A South Goa address</p>
           <h2>

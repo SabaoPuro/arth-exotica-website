@@ -7,84 +7,87 @@ export default function MeetingsPage() {
   return (
     <DefaultLayout>
       <PageHero
-        accent="people together."
-        description="A considered setting for focused work, memorable occasions and everything worth celebrating."
-        eyebrow="Meetings, conferences & celebrations"
-        image="/meeting-room-1.jpg"
-        title="Bring your"
+        accent="every occasion."
+        description="From focused meetings to private parties and celebrations, find a welcoming setting for bringing people together in South Goa."
+        eyebrow="Meetings, events & private celebrations"
+        image="/meeting-room-2.jpg"
+        title="Gather for"
       />
       <section className="meeting-intro section-wrap">
-        <div className="section-label">Gather at Arth Exotica</div>
+        <div className="section-label">A space for every gathering</div>
         <div>
           <h2>
-            Good ideas
+            Room for work
             <br />
-            <em>need good rooms.</em>
+            <em>and every occasion.</em>
           </h2>
           <p>
-            Plan a business meeting, a conference or a private celebration in
-            Colva. Let us know your format, guest count and preferred dates; the
-            team can confirm the right space and what is available.
+            Bring colleagues together for a meeting or conference, or gather
+            with family and friends for a private party, birthday, anniversary
+            or special celebration. Share your plans with our team to discuss
+            the right setup and current availability.
           </p>
         </div>
       </section>
       <section className="meeting-photo-row">
         <img
           alt="Meeting room arranged for a gathering"
-          src="/meeting-room-1.jpg"
+          src="/meeting-room-2.jpg"
         />
         <div className="meeting-photo-note">
-          <p className="eyebrow dark-eyebrow">Gather well</p>
+          <p className="eyebrow dark-eyebrow">Make room for a good time</p>
           <h2>
-            From agenda
+            From workday
             <br />
-            <em>to occasion.</em>
+            <em>to celebration.</em>
           </h2>
         </div>
         <img
-          alt="Terrace setting for an event"
-          src="/hotel-terrace-event.jpg"
+          alt="Arth Exotica hotel exterior"
+          src="/2.%20Arth%20Exotic%20Hotel%20Front%20Low%20Angle%20View%20copy.jpg"
         />
       </section>
-      <section className="pale-section">
+      <section className="pale-section meeting-offerings">
         <div className="section-wrap split-heading">
           <div>
-            <p className="eyebrow dark-eyebrow">Business & celebrations</p>
+            <p className="eyebrow dark-eyebrow">A reason to come together</p>
             <h2>
-              Everything in
+              Your gathering,
               <br />
-              <em>its right place.</em>
+              <em>your way.</em>
             </h2>
           </div>
           <div>
             <p>
-              We can help shape a smooth event from the first enquiry. Venue
-              capacity, conference equipment, catering, room blocks and event
-              packages depend on your requirements and require direct
-              confirmation.
+              Tell us what you have in mind. Layouts, guest capacity, catering,
+              equipment and other event arrangements depend on your plans and
+              are confirmed directly with the hotel.
             </p>
           </div>
         </div>
         <div className="section-wrap event-services">
           <div>
             <span>01</span>
-            <h3>Meetings</h3>
-            <p>Board meetings, team sessions and business get-togethers.</p>
+            <h3>Meetings & conferences</h3>
+            <p>
+              A welcoming place for team sessions, business discussions and
+              conferences.
+            </p>
           </div>
           <div>
             <span>02</span>
-            <h3>Conferences</h3>
+            <h3>Private parties</h3>
             <p>
-              Ask about room layouts, presentation equipment and refreshment
-              options.
+              Get together with friends and family for a birthday or a
+              celebration of your own.
             </p>
           </div>
           <div>
             <span>03</span>
-            <h3>Corporate stays</h3>
+            <h3>Special occasions</h3>
             <p>
-              Enquire about group accommodation and tailored corporate
-              arrangements.
+              Ask our team about hosting anniversaries and other memorable
+              gatherings.
             </p>
           </div>
         </div>
@@ -104,13 +107,13 @@ export default function MeetingsPage() {
           <div className="membership-contact-actions">
             <a
               className="button button-light"
-              href={`mailto:reservations@arthexotica.com?subject=${encodeURIComponent("Meeting / event enquiry")}&body=${encodeURIComponent("Hello Team Arth Exotica,\n\nI would like to enquire about a meeting, conference or event space.\n\nPlease share availability, capacity and next steps.\n\nThank you.\n\n[Your Name]")}`}
+              href={`mailto:reservations@arthexotica.com?subject=${encodeURIComponent("Meeting or private event enquiry")}&body=${encodeURIComponent("Hello Team Arth Exotica,\n\nI would like to enquire about hosting a meeting, private party or special celebration.\n\nPlease share availability, guest capacity and possible arrangements.\n\nThank you.\n\n[Your Name]")}`}
             >
               <EmailIcon /> reservations@arthexotica.com
             </a>
             <a
               className="button button-whatsapp"
-              href={`https://wa.me/${siteConfig.membershipWhatsApp.replace("+", "")}?text=${encodeURIComponent("Hello Team Arth Exotica, I would like to enquire about a meeting or event space.")}`}
+              href={`https://wa.me/${siteConfig.membershipWhatsApp.replace("+", "")}?text=${encodeURIComponent("Hello Team Arth Exotica, I would like to enquire about hosting a meeting, private party or special celebration.")}`}
               rel="noreferrer"
               target="_blank"
             >
@@ -120,8 +123,8 @@ export default function MeetingsPage() {
         </div>
       </section>
       <EnquiryBand
-        copy="Share your dates, guest count and event style. We’ll help you explore the possibilities."
-        title="Tell us what you’re bringing together."
+        copy="Share your preferred date, guest count and the occasion. We’ll help you explore what may be possible."
+        title="Let’s plan your gathering."
       />
     </DefaultLayout>
   );

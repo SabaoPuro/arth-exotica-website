@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import DefaultLayout from "@/layouts/default";
+import { hotelGalleryImages } from "@/components/hotel-gallery";
 import { siteConfig } from "@/config/site";
 
 export default function IndexPage() {
@@ -103,6 +104,7 @@ export default function IndexPage() {
           </div>
         </div>
       </section>
+      {/*
       <section aria-labelledby="home-video-title" className="home-video">
         <div className="section-wrap home-video-heading">
           <p className="eyebrow dark-eyebrow">Explore our property visually</p>
@@ -118,12 +120,48 @@ export default function IndexPage() {
             controls
             muted
             playsInline
-            poster="/hotel-full-view.jpg"
+            poster="/1.%20Arth%20Exotic%20Hotel%20Front%20Elevated%20View.jpg"
             preload="metadata"
           >
             <source src="/hotel-%20showreel.mp4" type="video/mp4" />
             Your browser does not support the hotel video.
           </video>
+        </div>
+      </section>
+      */}
+
+      <section aria-labelledby="home-gallery-title" className="home-gallery">
+        <div className="section-wrap home-gallery-heading">
+          <div>
+            <p className="eyebrow dark-eyebrow">A closer look</p>
+            <h2 id="home-gallery-title">
+              Hotel
+              <br />
+              <em>gallery.</em>
+            </h2>
+          </div>
+          <div className="home-gallery-intro">
+            <p>
+              Explore the spaces and details that make Arth Exotica feel like
+              your own little corner of South Goa.
+            </p>
+            <Link className="text-link" href="/gallery">
+              View the gallery
+              <span aria-hidden="true">&rarr;</span>
+            </Link>
+          </div>
+        </div>
+        <div className="section-wrap home-gallery-preview">
+          {hotelGalleryImages.slice(0, 4).map((image, index) => (
+            <Link
+              key={image.src}
+              aria-label={`View hotel gallery photo ${index + 1}`}
+              className={`home-gallery-preview-item home-gallery-preview-item-${index + 1}`}
+              href="/gallery"
+            >
+              <img alt={image.alt} loading="lazy" src={image.src} />
+            </Link>
+          ))}
         </div>
       </section>
 
@@ -298,33 +336,57 @@ export default function IndexPage() {
           </Link>
         </div>
         <div className="image-trio">
-          <Link className="image-tile" href="/stay">
+          <Link
+            aria-label="Explore rooms and suites"
+            className="image-tile"
+            href="/stay"
+          >
             <img alt="A guest room at Arth Exotica" src="/deluxe-room.jpg" />
-            <span>
-              Rest well <b>Rooms & suites</b>
-            </span>
+            <div className="image-tile-copy">
+              <span className="image-tile-kicker">Rest well</span>
+              <b>Rooms & suites</b>
+              <span className="image-tile-action">Explore rooms</span>
+            </div>
           </Link>
-          <Link className="image-tile" href="/dining">
-            <img alt="Restaurant dining at Arth Exotica" src="/dine-in-2.jpg" />
-            <span>
-              Gather around <b>Dining</b>
-            </span>
+          <Link
+            aria-label="Explore dining at Arth Exotica"
+            className="image-tile"
+            href="/dining"
+          >
+            <img
+              alt="Restaurant dining at Arth Exotica"
+              src="/Restaurant%20Picture%20-6.webp"
+            />
+            <div className="image-tile-copy">
+              <span className="image-tile-kicker">Gather around</span>
+              <b>Dining</b>
+              <span className="image-tile-action">Explore dining</span>
+            </div>
           </Link>
-          <Link className="image-tile" href="/meetings">
+          <Link
+            aria-label="Explore meetings and events at Arth Exotica"
+            className="image-tile"
+            href="/meetings"
+          >
             <img
               alt="Meeting space at Arth Exotica"
-              src="/meeting-room-1.jpg"
+              src="/meeting-room-2.jpg"
             />
-            <span>
-              Bring people together <b>Meetings & events</b>
-            </span>
+            <div className="image-tile-copy">
+              <span className="image-tile-kicker">Bring people together</span>
+              <b>Meetings & events</b>
+              <span className="image-tile-action">Explore events</span>
+            </div>
           </Link>
         </div>
       </section>
 
       <section className="home-note section-wrap">
         <div className="home-note-image">
-          <img alt="The hotel interior" src="/hotel-interior-2.jpg" />
+          <img
+            alt="Arth Exotica hotel exterior at dusk"
+            src="/4.%20Arth%20Exotic%20Hotel%20Front%20View%20with%20Ambiance%20Angle%20View.jpg"
+          />
         </div>
         <div className="home-note-copy">
           <p className="eyebrow">The details make the difference</p>
@@ -337,8 +399,8 @@ export default function IndexPage() {
             From a restful room to a poolside pause, explore the spaces and
             amenities that shape your time here.
           </p>
-          <Link className="text-link" href="/experiences#amenities">
-            See the amenities
+          <Link className="text-link" href="/experiences">
+            See Experiences
           </Link>
         </div>
       </section>
