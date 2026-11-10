@@ -6,13 +6,15 @@ export function PageHero({
   eyebrow,
   title,
   accent,
+  accentOnNewLine = false,
   description,
   image,
 }: {
   eyebrow: string;
   title: string;
   accent?: string;
-  description: string;
+  accentOnNewLine?: boolean;
+  description?: string;
   image: string;
 }) {
   return (
@@ -25,12 +27,12 @@ export function PageHero({
           {title}
           {accent && (
             <>
-              {" "}
+              {accentOnNewLine ? <br /> : " "}
               <em>{accent}</em>
             </>
           )}
         </h1>
-        <p>{description}</p>
+        {description && <p>{description}</p>}
       </div>
     </section>
   );

@@ -10,7 +10,7 @@ export default function AboutPage() {
         accent="your own."
         description="A welcoming South Goa hideaway for poolside pauses, unhurried stays and time well spent together."
         eyebrow="Arth Exotica · Fatona, Colva"
-        image="/4.%20Arth%20Exotic%20Hotel%20Front%20View%20with%20Ambiance%20Angle%20View.jpg"
+        image="/4__Arth_Exotic_Hotel_Front_View_with_Ambiance_Angle_View.webp"
         title="Make Goa"
       />
       <section className="about-story section-wrap">
@@ -31,7 +31,7 @@ export default function AboutPage() {
             <em>to stay.</em>
           </h2>
           <p>
-            Set in Fatona, Colva, Arth Exotica brings together 40 guest rooms, a
+            Set in Fatona, Colva, Arth Exotica brings together 38 guest rooms, a
             swimming pool, dining and spaces to gather. Come for a change of
             pace, make time for the people you love and shape a stay that feels
             like yours.
@@ -40,7 +40,7 @@ export default function AboutPage() {
             <div>
               <span>01</span>
               <strong>Stay</strong>
-              <p>40 welcoming rooms for a restful South Goa escape.</p>
+              <p>38 welcoming rooms for a restful South Goa escape.</p>
             </div>
             <div>
               <span>02</span>
@@ -87,7 +87,7 @@ export default function AboutPage() {
             <Link className="about-experience-card" href="/experiences">
               <img
                 alt="Swimming pool at Arth Exotica"
-                src="/5.%20Arth%20Exotic%20Hotel%20swimming%20pool%20area%20copy.jpg"
+                src="/5__Arth_Exotic_Hotel_swimming_pool_area_copy.webp"
               />
               <span className="about-experience-number">02 / UNWIND</span>
               <span className="about-experience-title">
@@ -96,8 +96,8 @@ export default function AboutPage() {
             </Link>
             <Link className="about-experience-card" href="/dining">
               <img
-                alt="Restaurant at Arth Exotica"
-                src="/Restaurant%20Picture%20-6.webp"
+                alt="Shukra Fine Dining at Arth Exotica"
+                src="/Restaurant_Picture_-6.webp"
               />
               <span className="about-experience-number">03 / GATHER</span>
               <span className="about-experience-title">Come to the table.</span>
@@ -108,7 +108,7 @@ export default function AboutPage() {
       <section className="about-image">
         <img
           alt="The illuminated Arth Exotica hotel exterior"
-          src="/1.%20Arth%20Exotic%20Hotel%20Front%20Elevated%20View.jpg"
+          src="/1__Arth_Exotic_Hotel_Front_Elevated_View.webp"
         />
         <div>
           <p className="eyebrow">Fatona · Colva · Goa</p>

@@ -31,7 +31,7 @@ export const Head = () => {
         image: imageUrl,
         email: siteConfig.reservationEmail,
         telephone: siteConfig.membershipWhatsApp,
-        numberOfRooms: 40,
+        numberOfRooms: 38,
         starRating: {
           "@type": "Rating",
           ratingValue: 4,
@@ -86,8 +86,8 @@ export const Head = () => {
         sameAs: siteConfig.socials.map((social) => social.url),
         containsPlace: {
           "@type": "Restaurant",
-          name: "Restaurant at Arth Exotica",
-          servesCuisine: ["Intercontinental", "Goan"],
+          name: "Shukra Fine Dining",
+          servesCuisine: ["Intercontinental"],
         },
       },
     ],

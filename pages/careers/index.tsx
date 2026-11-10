@@ -9,7 +9,7 @@ export default function CareersPage() {
         accent="things happen."
         description="Help create thoughtful stays, warm welcomes and memorable moments in South Goa."
         eyebrow="Careers at Arth Exotica"
-        image="/2.%20Arth%20Exotic%20Hotel%20Front%20Low%20Angle%20View%20copy.jpg"
+        image="/2__Arth_Exotic_Hotel_Front_Low_Angle_View_copy.webp"
         title="Make good"
       />
       <section className="careers-content section-wrap">

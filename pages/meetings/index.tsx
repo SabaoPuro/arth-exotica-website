@@ -8,13 +8,13 @@ export default function MeetingsPage() {
     <DefaultLayout>
       <PageHero
         accent="every occasion."
-        description="From focused meetings to private parties and celebrations, find a welcoming setting for bringing people together in South Goa."
+        description="Planning a future meeting, private party or celebration? Contact our team for updates as our event space takes shape."
         eyebrow="Meetings, events & private celebrations"
-        image="/meeting-room-2.jpg"
+        image="/4__Arth_Exotic_Hotel_Front_View_with_Ambiance_Angle_View.webp"
         title="Gather for"
       />
       <section className="meeting-intro section-wrap">
-        <div className="section-label">A space for every gathering</div>
+        <div className="section-label">Planning for future gatherings</div>
         <div>
           <h2>
             Room for work
@@ -22,29 +22,32 @@ export default function MeetingsPage() {
             <em>and every occasion.</em>
           </h2>
           <p>
-            Bring colleagues together for a meeting or conference, or gather
-            with family and friends for a private party, birthday, anniversary
-            or special celebration. Share your plans with our team to discuss
-            the right setup and current availability.
+            Arth Exotica’s meeting and event space is currently under
+            construction. Contact our team to discuss your plans and ask about
+            availability as the space takes shape.
           </p>
         </div>
       </section>
       <section className="meeting-photo-row">
         <img
-          alt="Meeting room arranged for a gathering"
-          src="/meeting-room-2.jpg"
+          alt="Swimming pool at Arth Exotica"
+          src="/5__Arth_Exotic_Hotel_swimming_pool_area_copy.webp"
         />
         <div className="meeting-photo-note">
-          <p className="eyebrow dark-eyebrow">Make room for a good time</p>
+          <p className="eyebrow dark-eyebrow">Currently under construction</p>
           <h2>
-            From workday
+            A new space
             <br />
-            <em>to celebration.</em>
+            <em>is taking shape.</em>
           </h2>
+          <p>
+            Get in touch with our team for updates on future meetings and
+            celebrations at Arth Exotica.
+          </p>
         </div>
         <img
           alt="Arth Exotica hotel exterior"
-          src="/2.%20Arth%20Exotic%20Hotel%20Front%20Low%20Angle%20View%20copy.jpg"
+          src="/2__Arth_Exotic_Hotel_Front_Low_Angle_View_copy.webp"
         />
       </section>
       <section className="pale-section meeting-offerings">
@@ -70,24 +73,24 @@ export default function MeetingsPage() {
             <span>01</span>
             <h3>Meetings & conferences</h3>
             <p>
-              A welcoming place for team sessions, business discussions and
-              conferences.
+              Share your requirements with our team while the meeting space is
+              under construction.
             </p>
           </div>
           <div>
             <span>02</span>
             <h3>Private parties</h3>
             <p>
-              Get together with friends and family for a birthday or a
-              celebration of your own.
+              Ask our team about plans for hosting birthdays and private
+              celebrations once the space is ready.
             </p>
           </div>
           <div>
             <span>03</span>
             <h3>Special occasions</h3>
             <p>
-              Ask our team about hosting anniversaries and other memorable
-              gatherings.
+              Enquire about future availability for anniversaries and other
+              special gatherings.
             </p>
           </div>
         </div>

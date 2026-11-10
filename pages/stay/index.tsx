@@ -10,11 +10,11 @@ const roomCategories = [
       "A welcoming retreat with a calm, comfortable feel—well suited to unwinding after a day in South Goa.",
     folder: "deluxe",
     images: [
-      "/deluxe/Deluxe%20Room%20-1.jpg",
-      "/deluxe/Deluxe%20Room%20-2.jpg",
-      "/deluxe/Deluxe%20Room%20-3.jpg",
-      "/deluxe/Deluxe%20Room%20-4.jpg",
-      "/deluxe/Deluxe%20Room%20-%205.jpg",
+      "/deluxe/Deluxe%20Room%20-1.webp",
+      "/deluxe/Deluxe%20Room%20-2.webp",
+      "/deluxe/Deluxe%20Room%20-3.webp",
+      "/deluxe/Deluxe%20Room%20-4.webp",
+      "/deluxe/Deluxe%20Room%20-%205.webp",
     ],
   },
   {
@@ -23,11 +23,10 @@ const roomCategories = [
       "A polished, restful room for a slower pace, from quiet mornings to easy evenings.",
     folder: "superior",
     images: [
-      "/superior/Superior%20Room%20-1.jpg",
-      "/superior/Superior%20Room%20-2.jpg",
-      "/superior/Superior%20Room%20-3.jpg",
-      "/superior/Superior%20Room%20-4.jpg",
-      "/superior/Superior%20Room%20-5.jpg",
+      "/superior/Superior%20Room%20-1.webp",
+      "/superior/Superior%20Room%20-2.webp",
+      "/superior/Superior%20Room%20-3.webp",
+      "/superior/Superior%20Room%20-4.webp",
     ],
   },
   {
@@ -36,12 +35,12 @@ const roomCategories = [
       "Enjoy a private balcony and take in a little open-air time during your South Goa stay.",
     folder: "Deluxe-with-Balcony",
     images: [
-      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-1.jpg",
-      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-2.jpg",
-      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-%203.jpg",
-      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-%204.jpg",
-      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-5.jpg",
-      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-%206.jpg",
+      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-1.webp",
+      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-2.webp",
+      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-%203.webp",
+      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-%204.webp",
+      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-5.webp",
+      "/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-%206.webp",
     ],
   },
   {
@@ -50,11 +49,11 @@ const roomCategories = [
       "A welcoming choice for family stays and relaxed time together in South Goa.",
     folder: "Family-room",
     images: [
-      "/Family-room/Family%20Room%20-1.jpg",
-      "/Family-room/Family%20Room%20-2.jpg",
-      "/Family-room/Family%20Room%20-3.jpg",
-      "/Family-room/Family%20Room%20-4.jpg",
-      "/Family-room/Family%20Room%20-5.jpg",
+      "/Family-room/Family%20Room%20-1.webp",
+      "/Family-room/Family%20Room%20-2.webp",
+      "/Family-room/Family%20Room%20-3.webp",
+      "/Family-room/Family%20Room%20-4.webp",
+      "/Family-room/Family%20Room%20-5.webp",
     ],
   },
   {
@@ -63,13 +62,13 @@ const roomCategories = [
       "A distinguished suite featuring a kitchenette for added convenience during your stay.",
     folder: "Presidential-Executive-room",
     images: [
-      "/Presidential-Executive-room/Presidential%20Room%20-2.jpg",
-      "/Presidential-Executive-room/Presidential%20Room%20-1.jpg",
-      "/Presidential-Executive-room/Presidential%20Room%20-3.jpg",
-      "/Presidential-Executive-room/Presidential%20Room%20-4.jpg",
-      "/Presidential-Executive-room/Presidential%20Room%20-5.jpg",
-      "/Presidential-Executive-room/Presidential%20Room%20-6.jpg",
-      "/Presidential-Executive-room/Presidential%20Room%20-7.jpg",
+      "/Presidential-Executive-room/Presidential%20Room%20-2.webp",
+      "/Presidential-Executive-room/Presidential%20Room%20-1.webp",
+      "/Presidential-Executive-room/Presidential%20Room%20-3.webp",
+      "/Presidential-Executive-room/Presidential%20Room%20-4.webp",
+      "/Presidential-Executive-room/Presidential%20Room%20-5.webp",
+      "/Presidential-Executive-room/Presidential%20Room%20-6.webp",
+      "/Presidential-Executive-room/Presidential%20Room%20-7.webp",
     ],
   },
 ];
@@ -81,7 +80,7 @@ export default function StayPage() {
         accent="unwind."
         description="Find your own pace in a calm, considered space made for restorative nights and slow mornings."
         eyebrow="Rooms & suites"
-        image="/deluxe/Deluxe%20Room%20-1.jpg"
+        image="/deluxe/Deluxe%20Room%20-1.webp"
         title="Room to"
       />
       <section className="room-intro section-wrap">
@@ -96,18 +95,18 @@ export default function StayPage() {
         <div className="room-photo">
           <img
             alt="Grand Deluxe room at Arth Exotica"
-            src="/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-1.jpg"
+            src="/Deluxe-with-Balcony/Deluxe%20with%20Balcony%20-1.webp"
           />
         </div>
         <div className="room-description">
           <p>
-            Explore five room categories, from Premium Deluxe and Luxury
-            Superior rooms to the Majestic Room and Royal Presidential Suite.
-            Browse each photo gallery, then contact the hotel to confirm details
-            and availability for your dates.
+            Explore all five room categories: Premium Deluxe, Luxury Superior,
+            Grand Deluxe, Majestic Room and Royal Presidential Suite. Browse
+            each photo gallery, then contact the hotel to confirm details and
+            availability for your dates.
           </p>
           <div className="room-tags">
-            <span>40 rooms</span>
+            <span>38 rooms</span>
             <span>Thoughtful comforts</span>
             <span>Restful interiors</span>
             <span>Goa, slow living</span>
@@ -179,11 +178,13 @@ export default function StayPage() {
             <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
-        <div className="stay-experiences-image">
-          <img alt="Spa treatment at Arth Exotica" src="/Spa%20treatment.jpg" />
-          <span className="stay-experiences-caption">
-            Your own kind of escape
-          </span>
+        <div className="stay-experiences-note">
+          <p className="eyebrow dark-eyebrow">Wellness &amp; experiences</p>
+          <h3>Unwind your way.</h3>
+          <p>
+            Ask the hotel team about current spa treatment availability and
+            arrangements during your stay.
+          </p>
         </div>
       </section>
       <section className="guest-info section-wrap" id="guest-information">
@@ -218,8 +219,8 @@ export default function StayPage() {
         </div>
         <DetailRows
           rows={[
-            { label: "Rooms", value: "40 rooms" },
-            { label: "Dining", value: "1 food & bar venue" },
+            { label: "Rooms", value: "38 rooms" },
+            { label: "Dining", value: "Shukra Fine Dining" },
             { label: "GSTIN", value: siteConfig.gstin },
           ]}
         />

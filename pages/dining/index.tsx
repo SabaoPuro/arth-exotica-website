@@ -5,16 +5,21 @@ export default function DiningPage() {
   return (
     <DefaultLayout>
       <PageHero
-        accent="chair."
-        description="Good food has a way of bringing the day together. Find your place at the table in Colva."
-        eyebrow="Dining at Arth Exotica"
-        image="/Restaurant%20Picture%20-3.jpg"
-        title="Pull up a"
+        accentOnNewLine
+        accent="Dine like royalty!"
+        eyebrow="Shukra Fine Dining · Arth Exotica"
+        image="/Restaurant_Picture_-3.webp"
+        title="Pull up a chair."
       />
       <section className="dining-intro section-wrap">
         <div className="dining-copy">
+          <img
+            alt="Shukra Fine Dining"
+            className="dining-brand-logo"
+            src="/Shukra%20FIne%20Dining%20logo.jpeg"
+          />
           <p className="eyebrow dark-eyebrow">
-            Intercontinental dining in Colva
+            A distinctive dining experience in Colva
           </p>
           <h2>
             Made for
@@ -22,15 +27,14 @@ export default function DiningPage() {
             <em>lingering.</em>
           </h2>
           <p>
-            Settle in at our food and bar venue for intercontinental dining at
-            Arth Exotica, where familiar favourites meet flavours from around
-            the world.
+            Welcome to Shukra Fine Dining at Arth Exotica, where familiar
+            favourites meet flavours from around the world.
           </p>
           <p>
-            Explore a varied menu of international cuisines, Goan specialities,
-            vegetarian dishes and more, with dietary options available on
-            request. Contact the hotel for the current selection, reservations
-            and private dining possibilities.
+            Explore a varied menu of international cuisines, vegetarian dishes
+            and more, with dietary options available on request. Contact the
+            hotel for the current selection, reservations and private dining
+            possibilities.
           </p>
           <div className="dining-actions">
             <a className="text-link" href="/contact">
@@ -46,20 +50,24 @@ export default function DiningPage() {
         </div>
         <div className="dining-gallery">
           <img
-            alt="Dining room at Arth Exotica"
-            src="/Restaurant%20Picture%20-2.jpg"
+            alt="Dining room at Shukra Fine Dining"
+            src="/Restaurant_Picture_-2.webp"
           />
           <img
-            alt="Restaurant bar at Arth Exotica"
-            src="/Restaurant%20Picture%20-4.jpg"
+            alt="Restaurant bar at Shukra Fine Dining"
+            src="/Restaurant_Picture_-4.webp"
           />
           <img
-            alt="Dining space at Arth Exotica"
-            src="/Restaurant%20Picture%20-7.webp"
+            alt="Dining space at Shukra Fine Dining"
+            src="/Restaurant_Picture_-7.webp"
           />
           <img
-            alt="Restaurant at Arth Exotica"
-            src="/Restaurant%20Picture%20-8.webp"
+            alt="Shukra Fine Dining at Arth Exotica"
+            src="/Restaurant_Picture_-8.webp"
+          />
+          <img
+            alt="Dining at Shukra Fine Dining"
+            src="/Restaurant_Picture_-9.webp"
           />
         </div>
       </section>
@@ -76,9 +84,8 @@ export default function DiningPage() {
             </div>
             <div>
               <p>
-                <strong>One food & bar venue</strong> serving intercontinental
-                favourites, Goan flavours and more for every appetite and
-                occasion.
+                <strong>Shukra Fine Dining</strong>, serving intercontinental
+                favourites and more for every appetite and occasion.
               </p>
             </div>
           </div>
@@ -93,10 +100,10 @@ export default function DiningPage() {
             </div>
             <div>
               <span>02</span>
-              <h3>Goan & Indian</h3>
+              <h3>Indian</h3>
               <p>
-                Local character and beloved regional dishes inspired by the
-                place we call home.
+                A selection of beloved Indian dishes alongside international
+                favourites.
               </p>
             </div>
             <div>
@@ -120,9 +127,8 @@ export default function DiningPage() {
           </h2>
           <br />
           <p>
-            Ask our team what is being served during your visit, including Goan
-            specialities, vegetarian dishes, dietary accommodations and service
-            hours.
+            Ask our team what is being served during your visit, including
+            vegetarian dishes, dietary accommodations and service hours.
           </p>
         </div>
       </section>

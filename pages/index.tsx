@@ -51,7 +51,7 @@ export default function IndexPage() {
               <em>rooted in Goa.</em>
             </h2>
             <p>
-              In Fatona, Colva, Arth Exotica brings together 40 guest rooms,
+              In Fatona, Colva, Arth Exotica brings together 38 guest rooms,
               warm Goan hospitality and thoughtful spaces to unwind, dine and
               gather. Make time for the swimming pool, yoga and meditation, or
               plan a stay around a shared meal or special occasion.
@@ -75,7 +75,7 @@ export default function IndexPage() {
               <span className="welcome-highlight-number">01</span>
               <span>
                 <strong>Stay</strong>
-                <small>40 rooms, made for a slower pace</small>
+                <small>38 rooms, made for a slower pace</small>
               </span>
               <span aria-hidden="true" className="welcome-highlight-arrow">
                 &gt;
@@ -120,7 +120,7 @@ export default function IndexPage() {
             controls
             muted
             playsInline
-            poster="/1.%20Arth%20Exotic%20Hotel%20Front%20Elevated%20View.jpg"
+            poster="/1__Arth_Exotic_Hotel_Front_Elevated_View.webp"
             preload="metadata"
           >
             <source src="/hotel-%20showreel.mp4" type="video/mp4" />
@@ -198,17 +198,16 @@ export default function IndexPage() {
             <div className="hotel-information-group">
               <p className="eyebrow dark-eyebrow">Dining</p>
               <div className="hotel-information-item">
-                <strong>1 food & bar venue</strong>
+                <strong>Shukra Fine Dining</strong>
                 <span>
-                  Intercontinental, Goan specialities, vegetarian dishes and
-                  more
+                  Intercontinental cuisine, vegetarian dishes and more
                 </span>
               </div>
             </div>
             <div className="hotel-information-group">
               <p className="eyebrow dark-eyebrow">Rooms & suites</p>
               <div className="hotel-information-item">
-                <strong>40 rooms</strong>
+                <strong>38 rooms</strong>
                 <span>
                   Thoughtful comforts and relaxed spaces for your stay
                 </span>
@@ -313,9 +312,9 @@ export default function IndexPage() {
               </span>
             </summary>
             <p>
-              The hotel has one food and bar venue offering intercontinental,
-              Goan and other cuisines. Contact the hotel for current menus and
-              service hours.
+              The hotel has one food and bar venue offering intercontinental
+              cuisine and more. Contact the hotel for current menus and service
+              hours.
             </p>
           </details>
         </div>
@@ -355,7 +354,7 @@ export default function IndexPage() {
           >
             <img
               alt="Restaurant dining at Arth Exotica"
-              src="/Restaurant%20Picture%20-6.webp"
+              src="/Restaurant_Picture_-6.webp"
             />
             <div className="image-tile-copy">
               <span className="image-tile-kicker">Gather around</span>
@@ -369,8 +368,8 @@ export default function IndexPage() {
             href="/meetings"
           >
             <img
-              alt="Meeting space at Arth Exotica"
-              src="/meeting-room-2.jpg"
+              alt="Arth Exotica hotel exterior"
+              src="/2__Arth_Exotic_Hotel_Front_Low_Angle_View_copy.webp"
             />
             <div className="image-tile-copy">
               <span className="image-tile-kicker">Bring people together</span>
@@ -385,7 +384,7 @@ export default function IndexPage() {
         <div className="home-note-image">
           <img
             alt="Arth Exotica hotel exterior at dusk"
-            src="/4.%20Arth%20Exotic%20Hotel%20Front%20View%20with%20Ambiance%20Angle%20View.jpg"
+            src="/4__Arth_Exotic_Hotel_Front_View_with_Ambiance_Angle_View.webp"
           />
         </div>
         <div className="home-note-copy">

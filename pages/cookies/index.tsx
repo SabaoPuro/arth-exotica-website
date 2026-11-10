@@ -9,7 +9,7 @@ export default function CookiePolicyPage() {
         accent="policy."
         description="How cookies and similar technologies may be used on this website."
         eyebrow="Your privacy choices"
-        image="/2.%20Arth%20Exotic%20Hotel%20Front%20Low%20Angle%20View%20copy.jpg"
+        image="/2__Arth_Exotic_Hotel_Front_Low_Angle_View_copy.webp"
         title="Cookie"
       />
       <article className="privacy-content section-wrap">

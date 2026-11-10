@@ -10,7 +10,7 @@ export default function ExperiencesPage() {
         accent="in the sun."
         description="Spend the day your way: cool off by the pool, slow down with a spa treatment, or make space for yoga and meditation."
         eyebrow="Poolside moments & mindful escapes"
-        image="/5.%20Arth%20Exotic%20Hotel%20swimming%20pool%20area%20copy.jpg"
+        image="/5__Arth_Exotic_Hotel_swimming_pool_area_copy.webp"
         title="Take a pause"
       />
       <section className="experience-intro section-wrap">
@@ -27,20 +27,22 @@ export default function ExperiencesPage() {
             meditation at Arth Exotica in Colva, South Goa.
           </p>
         </div>
-        <figure className="experience-intro-image">
-          <img
-            alt="A quiet moment for meditation"
-            loading="lazy"
-            src="/mediation-1.jpg"
-          />
-          <figcaption>Room to pause · Arth Exotica, Goa</figcaption>
-        </figure>
+        <aside
+          aria-label="Wellness information"
+          className="experience-intro-note"
+        >
+          <p className="eyebrow dark-eyebrow">Take time to unwind</p>
+          <p>
+            Contact the hotel to ask about current spa availability, yoga
+            sessions and meditation arrangements during your stay.
+          </p>
+        </aside>
       </section>
       <section className="experience-feature pool-feature" id="amenities">
         <div className="experience-feature-image">
           <img
             alt="Outdoor swimming pool at Arth Exotica"
-            src="/5.%20Arth%20Exotic%20Hotel%20swimming%20pool%20area%20copy.jpg"
+            src="/5__Arth_Exotic_Hotel_swimming_pool_area_copy.webp"
           />
         </div>
         <div className="experience-feature-copy pool-feature-copy">
@@ -79,11 +81,6 @@ export default function ExperiencesPage() {
         </div>
         <div className="section-wrap wellness-grid">
           <article className="wellness-card">
-            <img
-              alt="A guest practising yoga at Arth Exotica"
-              loading="lazy"
-              src="/yoga.jpg"
-            />
             <div className="wellness-card-copy">
               <div className="wellness-card-label">
                 <span>01</span>
@@ -97,12 +94,6 @@ export default function ExperiencesPage() {
             </div>
           </article>
           <article className="wellness-card">
-            <img
-              alt="A guest meditating in a peaceful setting"
-              className="meditation-image"
-              loading="lazy"
-              src="/mediation-2.jpg"
-            />
             <div className="wellness-card-copy">
               <div className="wellness-card-label">
                 <span>02</span>
@@ -116,11 +107,6 @@ export default function ExperiencesPage() {
             </div>
           </article>
           <article className="wellness-card">
-            <img
-              alt="A relaxing spa treatment"
-              loading="lazy"
-              src="/Spa%20treatment.jpg"
-            />
             <div className="wellness-card-copy">
               <div className="wellness-card-label">
                 <span>03</span>

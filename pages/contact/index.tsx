@@ -28,7 +28,7 @@ export default function ContactPage() {
         accent="hear from you."
         description="Planning a stay, a meal or a gathering? Reach out and we’ll help you find the right next step."
         eyebrow="Contact Arth Exotica"
-        image="/2.%20Arth%20Exotic%20Hotel%20Front%20Low%20Angle%20View%20copy.jpg"
+        image="/2__Arth_Exotic_Hotel_Front_Low_Angle_View_copy.webp"
         title="We’d love to"
       />
       <section className="contact-layout section-wrap">
@@ -94,8 +94,8 @@ export default function ContactPage() {
           </p>
           <DetailRows
             rows={[
-              { label: "Rooms", value: "40 rooms" },
-              { label: "Dining", value: "1 food & bar venue" },
+              { label: "Rooms", value: "38 rooms" },
+              { label: "Dining", value: "Shukra Fine Dining" },
               { label: "GSTIN", value: siteConfig.gstin },
               {
                 label: "Hotel pickup / drop",
@@ -113,7 +113,7 @@ export default function ContactPage() {
       <section className="contact-image">
         <img
           alt="Arth Exotica in Fatona, Colva"
-          src="/4.%20Arth%20Exotic%20Hotel%20Front%20View%20with%20Ambiance%20Angle%20View.jpg"
+          src="/4__Arth_Exotic_Hotel_Front_View_with_Ambiance_Angle_View.webp"
         />
         <div>
           <p className="eyebrow">A South Goa address</p>

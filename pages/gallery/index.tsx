@@ -11,7 +11,7 @@ export default function GalleryPage() {
         accent="in pictures."
         description="A closer look at the places, details and moments that make a stay at Arth Exotica."
         eyebrow="The Arth Exotica gallery"
-        image="/Hotel-Gallery-Images/1.%20Arth%20Exotic%20Hotel%20Front%20Elevated%20View.jpg"
+        image="/Hotel-Gallery-Images/1__Arth_Exotic_Hotel_Front_Elevated_View.webp"
         title="A sense of place,"
       />
       <section
@@ -38,7 +38,7 @@ export default function GalleryPage() {
         <div className="gallery-visit-image">
           <img
             alt="Arth Exotica at dusk in Colva, South Goa"
-            src="/Hotel-Gallery-Images/Copy%20of%204.%20Arth%20Exotic%20Hotel%20Front%20View%20with%20Ambiance%20Angle%20View.webp"
+            src="/Hotel-Gallery-Images/4__Arth_Exotic_Hotel_Front_View_with_Ambiance_Angle_View.webp"
           />
         </div>
         <div className="gallery-visit-copy">
